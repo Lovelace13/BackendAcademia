@@ -15,7 +15,8 @@ class Aula(models.Model):
     fecha = models.DateField(blank=True, null=True)
     hora = models.TimeField(blank=True, null=True)
     idasignatura = models.IntegerField(blank=True, null=True)
-    ideducador = models.ForeignKey('Profesor', models.DO_NOTHING, db_column='ideducador', blank=True, null=True)
+    ideducador = models.IntegerField(blank=True, null=True)
+    # ideducador = models.ForeignKey('Profesor', models.DO_NOTHING, db_column='ideducador', blank=True, null=True)
 
     class Meta:
         managed = False
