@@ -6,7 +6,7 @@ from Academia.models import Materia, Profesor, Aula
 class MateriaType(DjangoObjectType):
     class Meta:
         model = Materia
-        fields = ("nombre", "codigo","descripcion")
+        fields = ("idmateria","nombre", "codigo","descripcion")
 
 
 class createMateriaMutation(graphene.Mutation):
